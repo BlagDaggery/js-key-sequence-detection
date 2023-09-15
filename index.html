@@ -3,27 +3,15 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Key Detection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Key Detection | JavaScript 30 | BlagDaggery</title>
     <script type="text/javascript" src="./cornify.js"></script>
-    <link rel="icon" href="https://fav.farm/🔥" />
+    <link rel="icon" href="https://fav.farm/🦄" />
 </head>
 
 <body>
-    <script>
-        const keysPressed = [];
-        const secretCode = 'blagdaggery';
-
-        function testForSecretCode(e) {
-            keysPressed.push(e.key);
-            keysPressed.splice(-secretCode.length - 1, keysPressed.length - secretCode.length);
-
-            if (keysPressed.join('').includes(secretCode)) {
-                cornify_add();
-            }
-        }
-
-        window.addEventListener('keyup', testForSecretCode);
-    </script>
+    <p>Type "blagdaggery" to see some unicorns 🦄</p>
+    <script src="index.js"></script>
 </body>
 
 </html>
